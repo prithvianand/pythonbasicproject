@@ -1,0 +1,32 @@
+Q1. Take a list of 5 names of fruits. convert each name to upper case and print the updated list??
+Ans1
+fruits = ['mango','apple','guava','orange','banana']
+for i in range(len(fruits)):
+    fruits[i]=fruits[i].upper()
+print(fruits)
+Result1. ==> ['MANGO', 'APPLE', 'GUAVA', 'ORANGE', 'BANANA']
+
+Q2 Add 2 to each number in the list given ?? (List = [3,6,4,7,8])(using loop)
+Ans2
+l1 = [3,6,4,7,8]
+for i in l1:
+    a = i+2
+    print(a)
+Result2 ==> 5 8 6 9 10
+Q3. Take a list of 10 numbers. If the number is even, square it. If the number is odd, cube it. Do not make the changes in the original list. Show the output as list after the changes have been made. Print both the original list, and the changed list.??
+Ans3
+
+num = [1,3,2,4,6,5,7,9,8,10]
+
+num1 = []
+
+for i in range(len(num)):
+    if num[i]%2 == 0:
+        num1.append(num[i]**2)
+    else:
+        num1.append(num[i]**3)
+print(f'This is the Original List ==> {num} .',end='\n')
+print(f'This is the Changed Number List ==> {num1} .')
+
+Result3 ==>This is the Original List ==> [1, 3, 2, 4, 6, 5, 7, 9, 8, 10] .
+This is the Changed Number List ==> [1, 27, 4, 16, 36, 125, 343, 729, 64, 100] .
